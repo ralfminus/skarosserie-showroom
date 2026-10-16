@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKAROSSERIE · State of the Art in Metal</title>
+  <meta name="description" content="High-End Coachbuilding, Streckziehen, 3D-Forensik und industrieller Prototypenbau. Schäfer Karosseriebau & Blechteilemanufaktur.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="deck" class="deck-container">
+    <!-- Progress Indicator (Auto-Loop) -->
+    <div class="progress-bar-container">
+      <div id="loopProgress" class="progress-bar"></div>
+    </div>
+
+    <!-- Header Brand Bar -->
+    <header class="brand-header">
+      <div class="brand-logo">
+        <span class="logo-mark">◆</span>
+        <span class="logo-text">SKAROSSERIE</span>
+        <span class="logo-sub">SCHÄFER BLECHTEILEMANUFAKTUR</span>
+      </div>
+      <div class="header-status">
+        <span id="modeBadge" class="mode-badge manual">Vortrags-Modus</span>
+        <span class="slide-indicator" id="slideIndicator">01 / 09</span>
+      </div>
+    </header>
+
+    <!-- SLIDES WRAPPER -->
+    <main class="slides-wrapper">
+
+      <!-- SLIDE 1: Hero & Entree -->
+      <section class="slide active" data-slide="1" data-duration="12">
+        <div class="slide-bg" style="background-image: url('./streckziehen__03_tuerhaut_finish_class_a_flaeche.jpeg');"></div>
+        <div class="slide-overlay gradient-dark"></div>
+        <div class="slide-content content-hero">
+          <div class="hero-badge">AUTOMOTIVE HERITAGE & PROTOTYPENBAU</div>
+          <h1 class="hero-title">Blechkunst<br><em>für Legenden.</em></h1>
+          <p class="hero-lead">Vom 3D-Scan historischer Ikonen bis zur robotergeschweißten Hochvolt-Zukunft.</p>
+          <div class="hero-footer-tags">
+            <span class="tag">Streckziehpresse</span>
+            <span class="tag">Class-A-Surfacing</span>
+            <span class="tag">Kaltverfestigung</span>
+            <span class="tag">Laserschweißen</span>
+          </div>
+        </div>
+        <div class="speaker-notes">
+          <strong>Marco's Sprecher-Notiz (1:00 min):</strong><br>
+          „Herzlich willkommen! Viele kennen uns als Partner für anspruchsvolle Restaurierungen. Aber was wir heute tun, geht weit über traditionelles Handwerk hinaus: Wir verbinden die Königsdisziplinen der historischen Karosseriebau-Kunst mit digitaler Messtechnik und industriellem Prototypenbau auf OEM-Niveau.“
+        </div>
+      </section>
+
+      <!-- SLIDE 2: Das Problem & Mythos (Heritage & 300 SL) -->
+      <section class="slide" data-slide="2" data-duration="14">
+        <div class="slide-content content-grid-2">
+          <div class="text-column">
+            <div class="section-tag">HERITAGE & DIE WIRKLICHKEIT</div>
+            <h2 class="slide-title">Wenn automobile Ikonen <em>altern.</em></h2>
+            <p class="slide-text">
+              Für legendäre Klassiker gibt es längst keine Neuteile mehr. Der Markt ist überschwemmt von ungenauen Repros, die oft wochenlange Anpassungsarbeiten fordern – oder im Pfusch mit Spachtelmasse enden.
+            </p>
+            <div class="quote-card">
+              <span class="quote-icon">“</span>
+              <p>Spachtel ist Verrat am Blech. Echter Werterhalt erfordert Originaltreue im Hundertstel-Millimeter-Bereich.</p>
+            </div>
+            <div class="meta-bullets">
+              <div class="bullet-item">
+                <span class="bullet-num">01</span>
+                <span><strong>Kein Verzug:</strong> Originale Konturen ohne formverändernde Hitze.</span>
+              </div>
+              <div class="bullet-item">
+                <span class="bullet-num">02</span>
+                <span><strong>Plug & Play:</strong> Sparen von 30–50 Stunden Karosserie-Nacharbeit.</span>
+              </div>
+            </div>
+          </div>
+          <div class="visual-column stacked-visuals">
+            <div class="image-frame-stacked glow-gold">
+              <img src="./heritage__01_mercedes_300_sl_front_grill.jpg" alt="Mercedes-Benz 300 SL Frontpartie & Original-Kühlergrill">
+              <span class="frame-tag gold">PROJEKT-REFERENZ · MERCEDES-BENZ 300 SL</span>
+            </div>
+            <div class="image-frame-stacked glow-border">
+              <img src="./heritage__02_historischer_motorsport_goodwood_1950s.jpg" alt="Historischer Motorsport 1950er Goodwood Spirit">
+              <span class="frame-tag">HERITAGE DNA · HISTORISCHER MOTORSPORT</span>
+            </div>
+          </div>
+        </div>
+        <div class="speaker-notes">
+          <strong>Marco's Sprecher-Notiz (1:15 min):</strong><br>
+          „Sie alle kennen den Schmerz: Man restauriert eine Ikone wie den 300 SL oder einen frühen Porsche, und die gelieferten Blechteile passen hinten und vorne nicht. Die Werkstätten fangen an zu ziehen, zu schneiden und am Ende zu spachteln. Bei Fahrzeugen in dieser Liga ist Spachtel ein Wertvernichter. Wir haben gesagt: Wir lösen dieses Problem an der Wurzel.“
+        </div>
+      </section>
+
+      <!-- SLIDE 3: 3D-Forensik & Fotogrammetrie -->
+      <section class="slide" data-slide="3" data-duration="12">
+        <div class="slide-content content-split-visual">
+          <div class="text-column">
+            <div class="section-tag">SCHRITT 1 · DIGITALE FORENSIK</div>
+            <h2 class="slide-title">Wir raten nicht.<br><em>Wir messen.</em></h2>
+            <p class="slide-text">
+              Am Anfang jedes Bauteils steht der lückenlose 3D-Scan. Per optischer Fotogrammetrie erfassen wir Fahrzeugchassis oder historische Fragmente mobil vor Ort im Hundertstel-Millimeter-Bereich.
+            </p>
+            <div class="specs-grid">
+              <div class="spec-box">
+                <span class="spec-val">&lt; 0.05 mm</span>
+                <span class="spec-lbl">Scangenauigkeit</span>
+              </div>
+              <div class="spec-box">
+                <span class="spec-val">100 %</span>
+                <span class="spec-lbl">Digitaler Zwilling</span>
+              </div>
+              <div class="spec-box">
+                <span class="spec-val">Class A</span>
+                <span class="spec-lbl">CAD-Flächenrückführung</span>
+              </div>
+            </div>
+            <div class="meta-bullets">
+              <div class="bullet-item">
+                <span class="bullet-num">01</span>
+                <span><strong>Mobile Messtechnik:</strong> Berührungslose Erfassung direkt am Fahrzeug.</span>
+              </div>
+              <div class="bullet-item">
+                <span class="bullet-num">02</span>
+                <span><strong>Symmetrie-Abgleich:</strong> Rekonstruktion verunfallter oder fehlender Karosserieseiten.</span>
+              </div>
+            </div>
+            <p class="slide-footnote">Im Bild: Optischer 3D-Scan einer Mercedes G-Klasse Karosseriestruktur.</p>
+          </div>
+          <div class="visual-column">
+            <div class="image-frame glow-border">
+              <img src="./prozesskette__01_3d_scan_g_klasse_tuer_fotogrammetrie.jpeg" alt="3D Scan G-Klasse Tür Fotogrammetrie">
+              <div class="frame-tag">MESSVERFAHREN · OPTISCHE FOTOGRAMMETRIE</div>
+            </div>
+          </div>
+        </div>
+        <div class="speaker-notes">
+          <strong>Marco's Sprecher-Notiz (1:00 min):</strong><br>
+          „Wir dengeln nicht nach Gefühl. Wir beginnen mit 3D-Forensik. Mit hochpräziser Fotogrammetrie erfassen wir entweder das Fahrzeug selbst oder alte Originalfragmente. Wir erhalten eine lückenlose Punktwolke und konstruieren daraus am Rechner die perfekte Class-A-Fläche. Das garantiert, dass das spätere Blechteil saugend in die Karosserie passt.“
+        </div>
+      </section>
+
+      <!-- SLIDE 4: CNC-Fräsen & Video-Integration -->
+      <section class="slide" data-slide="4" data-duration="15">
+        <div class="slide-content content-split-visual">
+          <div class="text-column">
+            <div class="section-tag">SCHRITT 2 · WERKZEUGBAU</div>
+            <h2 class="slide-title">Vom CAD-Datensatz<br><em>ins Vollmaterial.</em></h2>
+            <p class="slide-text">
+              Aus den perfekten CAD-Flächen konstruieren wir passgenaue Form- und Klopfwerkzeuge. Auf modernen 5-Achs-CNC-Fräszentren entstehen Ureol- und Hartholz-Formwerkzeuge für reproduzierbare Kleinserien.
+            </p>
+            <div class="feature-pills">
+              <span class="pill">5-Achs-Simultanfräsen</span>
+              <span class="pill">Formstabile Ureol-Werkzeuge</span>
+              <span class="pill">Spiegelbildliche Symmetrie</span>
+            </div>
+            <div class="mini-gallery-row">
+              <div class="mini-thumb">
+                <img src="./prozesskette__02_cnc_fraesen_ureol_klopfklotz_fertig.jpeg" alt="CNC gefräster Ureol Klopfklotz">
+                <span>Klopfklotz Türinnenform</span>
+              </div>
+              <div class="mini-thumb">
+                <img src="./prozesskette__03_ureol_formwerkzeug_heck_radlauf.jpeg" alt="Ureol Formwerkzeug Heck Radlauf">
+                <span>Formwerkzeug Radlauf</span>
+              </div>
+            </div>
+          </div>
+          <div class="visual-column">
+            <div class="video-container glow-border">
+              <video id="cncVideo" loop muted playsinline preload="auto">
+                <source src="./prozesskette__02_cnc_fraesen_ureol_werkzeug_video.mp4" type="video/mp4">
+                Ihr Browser unterstützt kein HTML5-Video.
+              </video>
+              <div class="video-overlay-ctrl">
+                <button class="btn-video-toggle" id="btnCncVideo">▶ Video abspielen</button>
+                <span class="video-badge">LIVE-CLIP · 5-ACHS WERKZEUGFRÄSEN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="speaker-notes">
+          <strong>Marco's Sprecher-Notiz (1:15 min):</strong><br>
+          „Hier sehen Sie das CNC-Fräsen unserer Formwerkzeuge aus hochdichtem Ureol. Diese Formen sind unempfindlich gegen Luftfeuchtigkeit und behalten ihre Maße auf Dauer. Wenn wir ein Werkzeug gefräst haben, können wir linke und rechte Türen mit identischer Präzision herstellen – ob heute ein Stück oder in drei Jahren fünf weitere.“
+        </div>
+      </section>
+
+      <!-- SLIDE 5: Die Streckziehpresse (Chronik) -->
+      <section class="slide" data-slide="5" data-duration="14">
+        <div class="slide-content content-full">
+          <div class="section-header-centered">
+            <div class="section-tag">INVESTITION & EINGANGSBARRIERE</div>
+            <h2 class="slide-title">Die Entstehung eines <em>Monuments.</em></h2>
+            <p class="slide-lead">Warum wir Tonnen von Beton bewegt haben, um das perfekte Blech zu ziehen.</p>
+          </div>
+          <div class="grid-4-steps">
+            <div class="step-card">
+              <div class="step-img-wrap">
+                <img src="./streckziehpresse__01_fundament_aushub_bewehrung.jpeg" alt="Fundament Aushub und Bewehrung">
+                <span class="step-num">PHASE 1</span>
+              </div>
+              <div class="step-meta">
+                <h4>Aushub & Schwerlast-Bewehrung</h4>
+                <p>Grubenaushub und massive Stahlarmierung für hydraulische Horizontalkräfte.</p>
+              </div>
+            </div>
+            <div class="step-card">
+              <div class="step-img-wrap">
+                <img src="./streckziehpresse__03_fundament_betonwanne_rohbau.jpeg" alt="Fundament Betonwanne">
+                <span class="step-num">PHASE 2</span>
+              </div>
+              <div class="step-meta">
+                <h4>Schwingungsfreie Betonwanne</h4>
+                <p>Präzisionsgegossenes Fundament zur Entkopplung vom restlichen Hallenboden.</p>
+              </div>
+            </div>
+            <div class="step-card">
+              <div class="step-img-wrap">
+                <img src="./streckziehpresse__08_einhub_untergestell_grube.jpeg" alt="Einhub Untergestell">
+                <span class="step-num">PHASE 3</span>
+              </div>
+              <div class="step-meta">
+                <h4>Schwerlast-Einhub</h4>
+                <p>Zentimetergenaues Absenken des tonnenschweren Maschinenunterbaus per Kran.</p>
+              </div>
+            </div>
+            <div class="step-card">
+              <div class="step-img-wrap">
+                <img src="./streckziehpresse__13_montierte_presse_gesamtansicht.jpeg" alt="Montierte Streckziehpresse Gesamtansicht">
+                <span class="step-num">PHASE 4</span>
+              </div>
+              <div class="step-meta">
+                <h4>Einsatzbereite Großanlage</h4>
+                <p>Eine der seltenen industriellen Streckziehpressen in privater Manufakturhand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="speaker-notes">
+          <strong>Marco's Sprecher-Notiz (1:15 min):</strong><br>
+          „Das hier ist mein persönlicher Turmbau: Um Karosserieteile in echter OEM-Güte herzustellen, reicht kein kleiner Klopfhammer. Wir haben eine industrielle Streckziehpresse gekauft und eine gigantische Betonwanne in unsere Halle gegossen. Solche Anlagen stehen sonst nur bei Airbus oder den großen Automobilwerken. Wir haben diese Technologie in unsere Manufaktur geholt.“
+        </div>
+      </section>
+
+      <!-- SLIDE 6: Streckziehen & Kaltverfestigung -->
+      <section class="slide" data-slide="6" data-duration="14">
+        <div class="slide-content content-split-visual">
+          <div class="text-column">
+            <div class="section-tag">DIE PHYSIK DER PERFEKTION</div>
+            <h2 class="slide-title">Spannungsfrei.<br>Beulsteif. <em>Spachtelfrei.</em></h2>
+            <p class="slide-text">
+              Beim Streckziehen wird das Blech in hydraulischen Spannbacken plastisch über die Streckgrenze hinaus gedehnt, bevor es die Form berührt. 
+            </p>
+            <div class="benefit-box">
+              <div class="benefit-title">Unser "Secret Sauce": Die Kaltverfestigung</div>
+              <p>Durch die Dehnung richtet sich das Metallgitter neu aus. Das Resultat ist eine Beulsteifigkeit und Oberflächenspannung, die selbst neue Originalteile übertrifft – absolut wellenfrei.</p>
+            </div>
+            <div class="kpi-row">
+              <div class="kpi-item">
+                <span class="kpi-number">0.0 mm</span>
+                <span class="kpi-label">Spachteldicke</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-number">+ 35 %</span>
+                <span class="kpi-label">Höhere Beulsteifigkeit</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-number">Class A</span>
+                <span class="kpi-label">Reflexions-Finish</span>
+              </div>
+            </div>
+          </div>
+          <div class="visual-column stacked-visuals">
+            <div class="image-frame-stacked top">
+              <img src="./streckziehen__01_tuerhaut_auf_streckziehpresse.jpeg" alt="Türhaut auf Streckziehpresse">
+              <span class="frame-tag">SPANNUNG IM ZIEHPROZESS</span>
+            </div>
+            <div class="image-frame-stacked bottom">
+              <img src="./streckziehen__03_tuerhaut_finish_class_a_flaeche.jpeg" alt="Türhaut Finish Class A Fläche">
+              <span class="frame-tag">FERTIGES CLASS-A FLÄCHENFINISH</span>
+            </div>
+          </div>
+        </div>
+        <div class="speaker-notes">
+          <strong>Marco's Sprecher-Notiz (1:15 min):</strong><br>
+          „Hier sehen Sie das Ergebnis an einer Türhaut: Das Blech wird nicht gequetscht oder gestaucht, sondern gleichmäßig gestreckt. Dadurch entsteht Kaltverfestigung: Das Blech wird härter, federnder und beulsteifer als normales Tiefziehblech. Wenn man mit der Hand über die fertige Tür streicht, gibt es keine Dellen, keine Lichtbrechungen. Das Teil ist lackierfertig ohne einen einzigen Gramm Spachtelmasse.“
+        </div>
+      </section>
+
+      <!-- SLIDE 7: Video-Station: G-Klasse Türen im Einsatz & Vor-Ort-Exponat -->
+      <section class="slide" data-slide="7" data-duration="18">
+        <div class="slide-content content-split-visual">
+          <div class="visual-column">
+            <div class="video-container glow-gold video-click-to-play" id="slide7VideoWrap" title="Klicken, um das Video abzuspielen">
+              <div class="video-poster" id="slide7Poster">
+                <img src="./g_klasse_hofele_suicide_doors.png" alt="Hofele G-Klasse mit Rolls-Royce Coach Doors - Detailansicht">
+                <div class="poster-play-overlay">
+                  <div class="pulse-play-btn">
+                    <span class="triangle-play">▶</span>
+                  </div>
+                  <span class="poster-callout-text">Klicken zum Abspielen des Einsatzvideos</span>
+                </div>
+                <span class="frame-tag gold">HOFELE G63 · REVERSE COACH DOORS</span>
+              </div>
+              <div class="video-embed-holder" id="slide7EmbedHolder">
+                <iframe id="slide7YtIframe" data-src="https://www.youtube.com/embed/y4Fs3-2sPgw?autoplay=1&rel=0&enablejsapi=1" src="" title="G-Klasse Türen Fertigung und Einsatz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 100%; border-radius: 8px;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="text-column">
+            <div class="section-tag">DAS PROJEKT IM EINSATZ</div>
+            <h2 class="slide-title">Vom Rohblech zum <em>Gesamtkunstwerk.</em></h2>
+            <p class="slide-text">
+              Die auf der Streckziehpresse gefertigten Türen im finalen Fahrzeugaufbau. Perfekte Linienführung, spannungsfreie Passung und makellose Lichtkanten im realen Einsatz.
+            </p>
+            <div class="live-doors-callout" style="background: rgba(197, 160, 89, 0.15); border-color: var(--border-gold-bright);">
+              <span class="live-badge" style="background: var(--gold-gradient); color: #000;">HEUTE LIVE IM RAUM</span>
+              <p><strong>Die echten Türen zum Anfassen:</strong> Genau die in diesem Video gezeigten und verbauten Türen haben wir heute hier vor Ort. Überzeugen Sie sich selbst von der Haptik und Passgenauigkeit.</p>
+            </div>
+            <div class="meta-bullets">
+              <div class="bullet-item">
+                <span class="bullet-num">01</span>
+                <span><strong>100% Passform:</strong> Saugender Sitz in der originalen Karosserie.</span>
+              </div>
+              <div class="bullet-item">
+                <span class="bullet-num">02</span>
+                <span><strong>Null Spachtel:</strong> Reines, kaltverfestigtes Qualitätsmetall.</span>
+              </div>
+            </div>
+            <div class="video-action-row" style="margin-top: 18px; margin-bottom: 0;">
+              <a href="https://youtube.com/watch?v=y4Fs3-2sPgw" target="_blank" rel="noopener noreferrer" class="link-external-yt" style="color: var(--gold-light); border-color: var(--border-gold);">
+                ↗ Auf YouTube in voller Auflösung öffnen
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="speaker-notes">
+          <strong>Marco's Sprecher-Notiz (1:15 min):</strong><br>
+          „Die Türhaut, die Sie auf der vorherigen Folie auf der Streckziehpresse gesehen haben, ist nicht nur Theorie: Hier sehen Sie das fertige Fahrzeug im Einsatz! Und das Beste für Sie heute: Wir haben genau diese gefertigten Türen hier im Raum stehen. Nachher können Sie sich selbst von der Maßhaltigkeit und der perfekten Oberflächenspannung überzeugen.“
+        </div>
+      </section>
+
+      <!-- SLIDE 8: Meisterhandwerk (Eckold, Treiben, Klopfklotz) -->
+      <section class="slide" data-slide="8" data-duration="12">
+        <div class="slide-content content-full">
+          <div class="section-header-centered">
+            <div class="section-tag">HANDFORMKUNST</div>
+            <h2 class="slide-title">Wo Maschinen enden: <em>Die Meisterhand.</em></h2>
+            <p class="slide-lead">Technologie liefert die Rohform – das menschliche Gespür vollendet die Spaltmaße.</p>
+          </div>
+          <div class="grid-3-cards">
+            <div class="craft-card">
+              <div class="craft-img">
+                <img src="./handformung__07_eckold_kraftformer_stauchen_profil.jpeg" alt="Eckold Kraftformer Stauchen Profil">
+              </div>
+              <div class="craft-body">
+                <h3>Eckold Kraftformer</h3>
+                <p>Gezieltes Stauchen und Treiben von komplexen Struktur- und Schwellerprofilen ohne Materialausdünnung.</p>
+              </div>
+            </div>
+            <div class="craft-card">
+              <div class="craft-img">
+                <img src="./handformung__01_treiben_tuerblech_spannrahmen_drucklufthammer.jpeg" alt="Treiben Türblech Spannrahmen">
+              </div>
+              <div class="craft-body">
+                <h3>Treiben im Spannrahmen</h3>
+                <p>Freies Führen des Metalls mit Drucklufthammer und Holztreibfäusteln für fließende Übergänge.</p>
+              </div>
+            </div>
+            <div class="craft-card">
+              <div class="craft-img">
+                <img src="./handformung__04_schwellertraeger_klopfen_auf_ureolklotz.jpeg" alt="Schwellerträger klopfen auf Ureolklotz">
+              </div>
+              <div class="craft-body">
+                <h3>Passung am Klopfklotz</h3>
+                <p>Schärfen der Kanten und Radien auf dem gefrästen Ureol-Werkzeug für saugende Spaltmaße.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="speaker-notes">
+          <strong>Marco's Sprecher-Notiz (1:00 min):</strong><br>
+          „Trotz aller Computertechnik bleibt der Karosseriebau ein Meisterschaftshandwerk. An unserem Eckold Kraftformer und auf den Klopfklötzen passen wir Kanten, Sicken und Falze millimetergenau an. Die Maschine schafft die Fläche – das Handwerk sorgt dafür, dass die Tür beim Zuschlagen dieses unverwechselbare, satte Klicken erzeugt.“
+        </div>
+      </section>
+
+      <!-- SLIDE 9: Fügetechnik & Robotik -->
+      <section class="slide" data-slide="9" data-duration="14">
+        <div class="slide-content content-split-visual">
+          <div class="text-column">
+            <div class="section-tag">INDUSTRIELLE FÜGETECHNIK</div>
+            <h2 class="slide-title">Verbindungstechnik<br><em>auf OEM-Niveau.</em></h2>
+            <p class="slide-text">
+              Die Automobilindustrie fordert heute moderne Verbindungstechniken, die Materialien ohne Hitzeeintrag und ohne Verzug zusammenfügen. Wir beherrschen das gesamte Spektrum.
+            </p>
+            <div class="tech-list">
+              <div class="tech-item">
+                <span class="tech-icon">⚡</span>
+                <div>
+                  <strong>KUKA-Roboter Laserschweißen:</strong>
+                  <span>Geringste Wärmeeinflusszone, mikrometergenaue Nahtgeometrie für Aluminium & Stahl.</span>
+                </div>
+              </div>
+              <div class="tech-item">
+                <span class="tech-icon">🔗</span>
+                <div>
+                  <strong>Clinchen (Durchsetzfügen):</strong>
+                  <span>Form- und kraftschlüssiges Fügen ganz ohne Hilfsfügeteil oder Hitze.</span>
+                </div>
+              </div>
+              <div class="tech-item">
+                <span class="tech-icon">🔩</span>
+                <div>
+                  <strong>Halbhohlstanznieten:</strong>
+                  <span>Hochfeste Mischverbindungen (z. B. Aluminium mit hochfestem Stahl).</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="visual-column grid-2-visuals">
+            <div class="image-frame glow-border">
+              <img src="./batteriebox__02_kuka_roboter_laserschweissanlage.jpeg" alt="KUKA Roboter Laserschweissanlage">
+              <span class="frame-tag">KUKA 6-ACHS LASERROBOTER</span>
+            </div>
+            <div class="image-frame glow-border">
+              <img src="./batteriebox__04_laserschweisskopf_makroaufnahme_naht.jpeg" alt="Laserschweisskopf Makroaufnahme Naht">
+              <span class="frame-tag">MAKRO · LASERSCHWEISSNAHT</span>
+            </div>
+          </div>
+        </div>
+        <div class="speaker-notes">
+          <strong>Marco's Sprecher-Notiz (1:15 min):</strong><br>
+          „Ein modernes Karosserieteil besteht nicht nur aus Biegen. Um moderne Sicherheits- und Festigkeitsstandards zu erreichen, nutzen wir industrielle Verbindungstechnik: Halbhohlstanznieten für Aluminium-Stahl-Mischbauweisen, Clinchen und vor allem unsere KUKA-Laserschweißanlage. Der Laser bringt so wenig Hitze ins Bauteil, dass Verzug der Vergangenheit angehört.“
+        </div>
+      </section>
+
+      <!-- SLIDE 10: Der Live-Beweis: Die Batteriebox -->
+      <section class="slide" data-slide="10" data-duration="15">
+        <div class="slide-content content-split-visual">
+          <div class="text-column">
+            <div class="section-tag">ZUKUNFT PROTOTYPENBAU</div>
+            <h2 class="slide-title">Das Meisterstück:<br><em>Die Hochvolt-Batteriebox.</em></h2>
+            <p class="slide-text">
+              Hier schließt sich der Kreis von der automobilen Ikone zum High-Tech-Prototypenbau: Ein komplexes Batteriegehäuse aus Aluminium mit integriertem, gekammertem Kühlboden.
+            </p>
+            <div class="highlight-callout">
+              <div class="callout-badge">HEUTE LIVE VOR ORT</div>
+              <h3>Überzeugen Sie sich selbst.</h3>
+              <p>Heliumdichte Schweißnähte, strömungsoptimierte Kühlsicken und absolute Planheit. Dieses Original-Bauteil steht heute hier im Raum.</p>
+            </div>
+            <div class="live-action-banner">
+              👉 <strong>Marco lädt ein:</strong> Kommen Sie nach dem Vortrag gerne nach vorne und spüren Sie die Nahtqualität mit Ihren eigenen Fingern.
+            </div>
+          </div>
+          <div class="visual-column">
+            <div class="image-frame glow-gold">
+              <img src="./batteriebox__01_kuehlboden_sicken_anschluesse.jpeg" alt="Batteriebox Kühlboden Sicken Anschlüsse">
+              <span class="frame-tag gold">SHOWPIECE · KÜHLBODEN MIT SICKEN</span>
+            </div>
+          </div>
+        </div>
+        <div class="speaker-notes">
+          <strong>Marco's Sprecher-Notiz (1:15 min):</strong><br>
+          „Zum Abschluss möchte ich Ihnen zeigen, wohin dieser Weg führt: Diese Batteriebox ist kein gerendertes CAD-Bild, sondern ein reales Prototypen-Bauteil mit innenliegendem Kühlboden für Hochvolt-Fahrzeuge. Und das Beste: Ich habe dieses Gehäuse heute komplett hier im Raum dabei! Nach meinem Vortrag lade ich Sie herzlich ein: Gehen Sie nach vorne, streichen Sie über die Schweißnähte und sehen Sie selbst, was mit echter Präzision in Metall möglich ist. Vielen Dank!“
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER CONTROLS -->
+    <footer class="deck-controls">
+      <div class="controls-left">
+        <button id="btnPrev" class="ctrl-btn" title="Vorherige Folie (Pfeil links)">‹ Zurück</button>
+        <button id="btnNext" class="ctrl-btn" title="Nächste Folie (Pfeil rechts / Space)">Weiter ›</button>
+        <button id="btnLoopToggle" class="ctrl-btn loop-toggle" title="Auto-Loop umschalten (Taste A)">
+          <span class="loop-icon">↻</span> Auto-Loop: <strong id="loopStatusText">AUS</strong>
+        </button>
+      </div>
+      <div class="controls-center">
+        <span class="quick-nav-label">Station:</span>
+        <div class="dots-nav" id="dotsNav"></div>
+      </div>
+      <div class="controls-right">
+        <button id="btnNotesToggle" class="ctrl-btn" title="Marco's Sprechernotizen (Taste N)">📝 Notizen</button>
+        <button id="btnFullscreen" class="ctrl-btn" title="Vollbild (Taste F / F11)">⛶ Vollbild</button>
+      </div>
+    </footer>
+
+    <!-- VIDEO MODAL (YOUTUBE / EXTERNAL) -->
+    <div id="videoModal" class="video-modal">
+      <div class="video-modal-backdrop" id="btnBackdropClose"></div>
+      <div class="video-modal-dialog">
+        <div class="video-modal-header">
+          <span class="modal-title">FERTIGUNGS-DOKUMENTATION · G-KLASSE TÜREN</span>
+          <button id="btnCloseModal" class="modal-close-btn">&times; Schließen (ESC)</button>
+        </div>
+        <div class="video-modal-body">
+          <div class="iframe-responsive-wrap">
+            <iframe id="ytIframe" src="" title="G-Klasse Türen Fertigung" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPEAKER NOTES DRAWER -->
+    <aside id="notesDrawer" class="notes-drawer">
+      <div class="notes-header">
+        <h3>Moderations-Leitfaden für Marco</h3>
+        <button id="btnCloseNotes" class="close-btn">&times;</button>
+      </div>
+      <div id="notesBody" class="notes-body"></div>
+    </aside>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

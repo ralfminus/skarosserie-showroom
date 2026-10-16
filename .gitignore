@@ -1,0 +1,10 @@
+# Backups & Rohversionen
+*.bak
+*_orig.jpeg
+*.tmp
+
+# OS & System-Dateien
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
