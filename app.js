@@ -22,12 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnNext = document.getElementById('btnNext');
   const btnLoopToggle = document.getElementById('btnLoopToggle');
   const loopStatusText = document.getElementById('loopStatusText');
-  const btnNotesToggle = document.getElementById('btnNotesToggle');
   const btnFullscreen = document.getElementById('btnFullscreen');
-  
-  const notesDrawer = document.getElementById('notesDrawer');
-  const notesBody = document.getElementById('notesBody');
-  const btnCloseNotes = document.getElementById('btnCloseNotes');
   
   // Videos & Modals
   const cncVideo = document.getElementById('cncVideo');
@@ -90,9 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const formattedTotal = String(totalSlides).padStart(2, '0');
     slideIndicator.textContent = `${formattedNum} / ${formattedTotal}`;
 
-    // Update Speaker Notes
-    updateSpeakerNotes();
-
     // Reset and restart Loop Timer if looping
     resetLoopProgress();
     if (isAutoLoop) {
@@ -108,26 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
     goToSlide(currentSlideIndex - 1);
   }
 
-  // Speaker Notes Management
-  function updateSpeakerNotes() {
-    const activeSlide = slides[currentSlideIndex];
-    const notesEl = activeSlide.querySelector('.speaker-notes');
-    if (notesEl && notesBody) {
-      notesBody.innerHTML = notesEl.innerHTML;
-    } else if (notesBody) {
-      notesBody.textContent = 'Keine Notizen für diese Folie hinterlegt.';
-    }
-  }
-
-  function toggleNotes(force) {
-    const shouldOpen = force !== undefined ? force : !notesDrawer.classList.contains('open');
-    if (shouldOpen) {
-      updateSpeakerNotes();
-      notesDrawer.classList.add('open');
-    } else {
-      notesDrawer.classList.remove('open');
-    }
-  }
 
   // Auto-Loop (Ambient Kiosk Engine)
   function toggleAutoLoop(force) {
@@ -260,12 +232,9 @@ document.addEventListener('DOMContentLoaded', () => {
     btnBackdropClose.addEventListener('click', closeVideoModal);
   }
 
-  // Button Listeners
   btnPrev.addEventListener('click', prevSlide);
   btnNext.addEventListener('click', nextSlide);
   btnLoopToggle.addEventListener('click', () => toggleAutoLoop());
-  btnNotesToggle.addEventListener('click', () => toggleNotes());
-  btnCloseNotes.addEventListener('click', () => toggleNotes(false));
   btnFullscreen.addEventListener('click', toggleFullscreen);
 
   // Keyboard Navigation
@@ -274,10 +243,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') {
       if (videoModal.classList.contains('open')) {
         closeVideoModal();
-        return;
-      }
-      if (notesDrawer.classList.contains('open')) {
-        toggleNotes(false);
         return;
       }
     }
@@ -301,10 +266,6 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'A':
         toggleAutoLoop();
         break;
-      case 'n':
-      case 'N':
-        toggleNotes();
-        break;
       case 'f':
       case 'F':
         toggleFullscreen();
@@ -312,6 +273,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Initial Setup
-  updateSpeakerNotes();
 });

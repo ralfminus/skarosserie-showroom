@@ -12,7 +12,6 @@
   * Hofele G63 Coach Doors Fertigung & Fahrzeugeinsatz (Klick-Video & Live-Exponat)
   * Verbindungstechnik & KUKA-Laserschweißen
   * Hochvolt-Batteriebox als Showpiece
-* **Referenten-Spickzettel:** Ausklappbare Moderationsnotizen für Marco (Taste `[N]`).
 * **Vollbild:** Beamer-optimiert in 16:9 (Taste `[F]` / `F11`).
 
 ## 🌐 Live-View via GitHub Pages
