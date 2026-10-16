@@ -2,6 +2,8 @@
 *.bak
 *_orig.jpeg
 *.tmp
+* - Kopie.*
+*Kopie*
 
 # OS & System-Dateien
 Thumbs.db
